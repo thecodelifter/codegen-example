@@ -1,0 +1,31 @@
+overwrite: true
+# Schema prop can be a url if need be
+schema: ../backend/schema.ts
+documents:
+  - 'src/**/*.graphql'
+config:
+  apolloReactHooksImportFrom: '@apollo/client'
+  apolloReactCommonImportFrom: '@apollo/client'
+generates:
+  src/types.ts:
+    plugins:
+      - typescript
+    config:
+      skipTypename: false
+      nonOptionalTypename: true
+      namingConvention: keep
+  src/:
+    preset: near-operation-file
+    presetConfig:
+      extension: .generated.tsx
+      baseTypesPath: types.ts
+    plugins:
+      - 'typescript-operations'
+      - 'typescript-react-apollo'
+    config:
+      withHooks: true
+      withComponent: false
+      withHOC: false
+      namePrefix: 'gql'
+      skipTypename: false
+      nonOptionalTypename: true

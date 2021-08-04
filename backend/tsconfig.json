@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "inlineSourceMap": true,
+    "resolveJsonModule": true,
+    "target": "es2019",
+    "module": "commonjs",
+    "lib": [
+      "es2019"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "~/*": [
+        "./*"
+      ]
+    },
+    "esModuleInterop": true
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.graphql"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

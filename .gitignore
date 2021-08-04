@@ -1,0 +1,5 @@
+npm-debug.log
+package-lock.json
+node_modules
+react-app-env.d.ts
+.DS_store
