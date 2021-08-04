@@ -4,8 +4,10 @@ import { useGetAllUsersQuery } from 'graphql/queries/GetAllUsers.generated';
 
 const User = () => {
   const { data, loading } = useGetAllUsersQuery();
+
   console.log({ data, loading });
-  return <div>User</div>;
+
+  return <div>Display User Data here</div>;
 };
 
 export default User;
