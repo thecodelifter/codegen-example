@@ -1,1 +1,1 @@
-# React Apollo FE + Codegen & Node Codegen BE
+# React Apollo FE + CodeGen & Node CodeGen BE
