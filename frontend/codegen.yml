@@ -1,5 +1,5 @@
 overwrite: true
-# Schema prop can be a url if need be
+# Schema can be a url if need be
 schema: ../backend/schema.ts
 documents:
   - 'src/**/*.graphql'
