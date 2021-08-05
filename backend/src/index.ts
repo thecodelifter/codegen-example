@@ -15,7 +15,7 @@ const resolvers = {
     },
   },
   Mutation: {
-    register: (_, { email, password, name }: types.MutationRegisterArgs) => {
+    createUser: (_, { email, password, name }: types.MutationCreateUserArgs) => {
       const newUser = {
         id: uuidv4(),
         email,

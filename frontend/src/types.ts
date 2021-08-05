@@ -10,11 +10,11 @@ export type Scalars = {
 
 export type Mutation = {
    __typename: 'Mutation',
-  register: User,
+  createUser: User,
 };
 
 
-export type MutationregisterArgs = {
+export type MutationcreateUserArgs = {
   email: Scalars['String'],
   password: Scalars['String'],
   name: Scalars['String']
