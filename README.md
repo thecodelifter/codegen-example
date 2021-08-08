@@ -1,4 +1,4 @@
-# CodeGen Example w/ React Apollo FE + Node GraphQL BE
+# Codegen Example w/ React Apollo FE + Node GraphQL BE
 
 This is basic demo on how to setup CodeGen for the BE and FE.
 
