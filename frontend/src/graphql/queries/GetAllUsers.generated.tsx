@@ -11,7 +11,7 @@ export type GetAllUsersQuery = (
   { __typename: 'Query' }
   & { getAllUsers: Array<Types.Maybe<(
     { __typename: 'User' }
-    & Pick<Types.User, 'id' | 'name'>
+    & Pick<Types.User, 'id' | 'name' | 'email'>
   )>> }
 );
 
@@ -21,6 +21,7 @@ export const GetAllUsersDocument = gql`
   getAllUsers {
     id
     name
+    email
   }
 }
     `;
