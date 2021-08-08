@@ -37,17 +37,20 @@ const CreateUser = () => {
   };
 
   if (loading) {
-    return <div>Creating a new User</div>;
+    return <S.CenterText>Loading...</S.CenterText>;
   }
 
   return (
-    <S.Form onSubmit={handleSubmit}>
-      <label>Name:</label>
-      <input type="text" name="name" value={formValues['name']} onChange={handleChange} />
-      <label>Email:</label>
-      <input type="text" name="email" value={formValues['email']} onChange={handleChange} />
-      <button type="submit">Create</button>
-    </S.Form>
+    <div>
+      <S.Heading>Create User Form</S.Heading>
+      <S.Form onSubmit={handleSubmit}>
+        <label>Name:</label>
+        <input type="text" name="name" value={formValues['name']} onChange={handleChange} />
+        <label>Email:</label>
+        <input type="text" name="email" value={formValues['email']} onChange={handleChange} />
+        <button type="submit">Create</button>
+      </S.Form>
+    </div>
   );
 };
 

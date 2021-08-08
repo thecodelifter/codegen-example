@@ -12,3 +12,11 @@ export const Form = styled.form`
     margin-top: 0.5rem;
   }
 `;
+
+export const Heading = styled.h1`
+  text-align: center;
+`;
+
+export const CenterText = styled.div`
+  text-align: center;
+`;

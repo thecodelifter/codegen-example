@@ -7,13 +7,14 @@ import * as S from './styles';
 const User = () => {
   const { data, loading } = useGetAllUsersQuery();
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <S.UserWrapper>Loading...</S.UserWrapper>;
 
-  if (data?.getAllUsers.length === 0) return <div>There are currently no users</div>;
+  if (data?.getAllUsers.length === 0)
+    return <S.UserWrapper>There are currently no users</S.UserWrapper>;
 
   return (
     <S.UserWrapper>
-      <div>Current Users:</div>
+      <h1>Current Users:</h1>
       {data?.getAllUsers.map(user => (
         <div key={user?.id}>
           {user?.name} - {user?.email}
