@@ -15,11 +15,10 @@ const resolvers = {
     },
   },
   Mutation: {
-    createUser: (_, { email, password, name }: types.MutationCreateUserArgs) => {
+    createUser: (_, { email, name }: types.MutationCreateUserArgs) => {
       const newUser = {
         id: uuidv4(),
         email,
-        password,
         name,
       };
 

@@ -6,7 +6,6 @@ import * as ApolloReactHooks from '@apollo/client';
 
 export type CreateUserMutationVariables = {
   email: Types.Scalars['String'],
-  password: Types.Scalars['String'],
   name: Types.Scalars['String']
 };
 
@@ -21,8 +20,8 @@ export type CreateUserMutation = (
 
 
 export const CreateUserDocument = gql`
-    mutation CreateUser($email: String!, $password: String!, $name: String!) {
-  createUser(email: $email, password: $password, name: $name) {
+    mutation CreateUser($email: String!, $name: String!) {
+  createUser(email: $email, name: $name) {
     id
     email
     name
@@ -45,7 +44,6 @@ export type CreateUserMutationFn = ApolloReactCommon.MutationFunction<CreateUser
  * const [createUserMutation, { data, loading, error }] = useCreateUserMutation({
  *   variables: {
  *      email: // value for 'email'
- *      password: // value for 'password'
  *      name: // value for 'name'
  *   },
  * });

@@ -8,7 +8,6 @@ import * as S from './styles';
 const DEFAULT_FORM_VALUES = {
   name: '',
   email: '',
-  password: '',
 };
 
 type FormTypes = typeof DEFAULT_FORM_VALUES;
@@ -47,8 +46,6 @@ const CreateUser = () => {
       <input type="text" name="name" value={formValues['name']} onChange={handleChange} />
       <label>Email:</label>
       <input type="text" name="email" value={formValues['email']} onChange={handleChange} />
-      <label>Password:</label>
-      <input type="text" name="password" value={formValues['password']} onChange={handleChange} />
       <button type="submit">Create</button>
     </S.Form>
   );

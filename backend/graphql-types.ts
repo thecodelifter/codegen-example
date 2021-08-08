@@ -19,7 +19,6 @@ export type Mutation = {
 
 export type MutationCreateUserArgs = {
   email: Scalars['String'];
-  password: Scalars['String'];
   name: Scalars['String'];
 };
 
