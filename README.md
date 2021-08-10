@@ -38,9 +38,9 @@ The `npm run codegen:generate` command is the Codegen Generator generating the t
 
 The BE types that are generated from the backend/schema.ts file and are outputted to backend/graphql-types.ts are then available for you to use within your backend folder.
 
-Now for the FE all the GraphQL files are located in `frontend/src/graphql` from here after running the `cd frontend && npm run codegen:generate` you will see in the same folder as the GraphQL files a `*.generated.tsx`. These are the outputted files from the Codegen Generator.
+Now for the FE all the GraphQL files are located in `frontend/src/graphql` from here after running the `cd frontend && npm run codegen:generate` command you will see in the same folder a `*.generated.tsx`. These are the outputted files from the Codegen Generator.
 
-This generated file contains the `types, hooks & graphql document` generated.
+These generated files contains the `types, hooks & the graphql document`.
 
 Code example below on how to import and use the hook from the `GetAllUsers.generated.tsx` file.
 
