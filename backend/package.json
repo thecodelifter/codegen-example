@@ -7,6 +7,9 @@
     "start": "node --loader ts-node/esm ./src/index.ts",
     "codegen:generate": "./node_modules/.bin/graphql-code-generator"
   },
+  "engines": {
+    "node": ">=12"
+  },
   "author": "Jake Rossi (thecodelifter)",
   "license": "ISC",
   "dependencies": {
