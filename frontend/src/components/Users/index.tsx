@@ -1,23 +1,12 @@
 import React from 'react';
 
+import DisplayUser from './DisplayedUser'
 import { useGetAllUsersQuery } from 'graphql/queries/GetAllUsers.generated';
-
 import * as S from './styles';
-import * as types from 'types';
 
 const Heading = () => <h1>Current Users:</h1>;
 
-const DisplayUser = ({ user }: { user: types.User | null }) => {
-  if (!user) return null;
-
-  return (
-    <div>
-      {user.name} - {user.email}
-    </div>
-  );
-};
-
-const User = () => {
+const Users = () => {
   const { data, loading } = useGetAllUsersQuery();
 
   if (loading)
@@ -41,4 +30,4 @@ const User = () => {
   );
 };
 
-export default User;
+export default Users;

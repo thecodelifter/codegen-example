@@ -1,11 +1,11 @@
 import React from 'react';
 
-import User from 'components/User';
+import Users from 'components/Users';
 import CreateUser from 'components/CreateUser';
 
 const App = () => (
   <>
-    <User />
+    <Users />
     <CreateUser />
   </>
 );
